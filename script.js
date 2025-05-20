@@ -1,6 +1,5 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", function () {
-    const sounds = ["sound1", "sound2", "sound3", "sound4"]; // Sound names without extension
+    const sounds = ["sound1", "sound2", "sound3", "sound4"]; // Add your sound file names here
     const buttonsContainer = document.createElement("div");
     buttonsContainer.id = "buttons";
     document.body.appendChild(buttonsContainer);
@@ -39,4 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     stopBtn.addEventListener("click", stopAllSounds);
 });
-
