@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.textContent = sound;
         buttonsContainer.appendChild(btn);
 
-        const audio = new Audio(`./sounds/${sound}.mp3`);
+        const audio = document.createElement("audio");
+        audio.src = `./sounds/${sound}.mp3`;
+        audio.id = `audio-${sound}`;
+        audio.preload = "auto";
+        document.body.appendChild(audio); // <-- important
         audioElements.push(audio);
 
         btn.addEventListener("click", function () {
